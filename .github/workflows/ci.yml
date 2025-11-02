@@ -71,9 +71,11 @@ jobs:
         run: pnpm run build
 
       - name: Release
-        permissions:
-          contents: read
-          packages: write
+          permissions:
+            contents: read
+            issues: write
+            pull-requests: write
+            id-token: write
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
