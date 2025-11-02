@@ -34,7 +34,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/redxzeta/jsonmd-bridge.git"
+    "url": "https://github.com/redxzeta/jsonMdBridge.git"
   },
   "packageManager": "pnpm@8.15.0",
   "publishConfig": {
