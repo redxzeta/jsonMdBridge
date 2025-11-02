@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { markdownToJson, type MarkdownToJsonOptions } from '../../src/converters/markdownToJson';
+import { markdownToJson } from '../../src/converters/markdownToJson';
 import { jsonToMarkdown } from '../../src/converters/jsonToMarkdown';
 
 describe('markdownToJson', () => {
@@ -13,7 +13,7 @@ describe('markdownToJson', () => {
       expect(result.errors).toEqual([]);
       expect(result.data).toEqual({
         name: 'John',
-        age: '30',
+        age: 30,
       });
     });
 

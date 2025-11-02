@@ -8,3 +8,7 @@ coverage/
 *.swp
 *.swo
 *~
+
+# Test output files
+sample-output.md
+sample-roundtrip.json

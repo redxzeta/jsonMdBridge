@@ -19,7 +19,8 @@
     "test:coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "pnpm run build",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "test:sample": "pnpm build && node test-script.js"
   },
   "keywords": [
     "json",

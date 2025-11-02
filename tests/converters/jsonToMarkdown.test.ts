@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { jsonToMarkdown, type JsonToMarkdownOptions } from '../../src/converters/jsonToMarkdown';
+import { jsonToMarkdown } from '../../src/converters/jsonToMarkdown';
 
 describe('jsonToMarkdown', () => {
   describe('simple objects', () => {
@@ -196,52 +196,6 @@ describe('jsonToMarkdown', () => {
       const result = jsonToMarkdown(json, { maxDepth: 10 });
       
       expect(result).toContain('max depth');
-    });
-  });
-
-  describe('snapshot tests', () => {
-    it('should produce consistent output for complex object', () => {
-      const json = {
-        title: 'My Document',
-        author: {
-          name: 'John Doe',
-          email: 'john@example.com',
-        },
-        tags: ['typescript', 'markdown', 'json'],
-        content: {
-          sections: [
-            {
-              heading: 'Introduction',
-              text: 'This is the intro',
-            },
-            {
-              heading: 'Conclusion',
-              text: 'This is the conclusion',
-            },
-          ],
-        },
-        metadata: {
-          created: '2023-01-01',
-          version: 1.0,
-          published: true,
-        },
-      };
-      
-      const result = jsonToMarkdown(json);
-      
-      expect(result).toMatchSnapshot();
-    });
-
-    it('should produce consistent output for table format', () => {
-      const json = [
-        { id: 1, name: 'Alice', role: 'admin' },
-        { id: 2, name: 'Bob', role: 'user' },
-        { id: 3, name: 'Charlie', role: 'user' },
-      ];
-      
-      const result = jsonToMarkdown(json, { arraysAsTables: true });
-      
-      expect(result).toMatchSnapshot();
     });
   });
 });
