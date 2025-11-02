@@ -15,15 +15,15 @@ A lightweight, dependency-free TypeScript library for converting JSON ↔ Markdo
 ## 📦 Installation
 
 ```bash
+pnpm add jsonmd-bridge
+```
+
+```bash
 npm install jsonmd-bridge
 ```
 
 ```bash
 yarn add jsonmd-bridge
-```
-
-```bash
-pnpm add jsonmd-bridge
 ```
 
 ## 🚀 Quick Start
@@ -256,19 +256,19 @@ const reportMd = jsonToMarkdown(report, { arraysAsTables: true });
 Run the test suite:
 
 ```bash
-npm test
+pnpm test
 ```
 
 Run tests in watch mode:
 
 ```bash
-npm run test:watch
+pnpm test:watch
 ```
 
 Generate coverage report:
 
 ```bash
-npm run test:coverage
+pnpm test:coverage
 ```
 
 ## 🛠️ Development
@@ -276,7 +276,7 @@ npm run test:coverage
 ### Building
 
 ```bash
-npm run build
+pnpm build
 ```
 
 This generates:
@@ -287,7 +287,7 @@ This generates:
 ### Type Checking
 
 ```bash
-npm run typecheck
+pnpm typecheck
 ```
 
 ## 📝 TypeScript Support
@@ -320,13 +320,13 @@ git clone https://github.com/yourusername/jsonmd-bridge.git
 cd jsonmd-bridge
 
 # Install dependencies
-npm install
+pnpm install
 
 # Run tests
-npm test
+pnpm test
 
 # Build
-npm run build
+pnpm build
 ```
 
 ### Code Style

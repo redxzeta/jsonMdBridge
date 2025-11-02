@@ -14,11 +14,12 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "test": "vitest",
+    "test": "vitest run",
     "test:watch": "vitest --watch",
     "test:coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm run build",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "json",
@@ -30,9 +31,20 @@
   ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/jsonmd-bridge.git"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/node": "^20.11.0",
     "@vitest/coverage-v8": "^1.2.1",
+    "semantic-release": "^22.0.12",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "vitest": "^1.2.1"

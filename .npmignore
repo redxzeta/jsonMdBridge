@@ -1,0 +1,27 @@
+# Source files
+src/
+tests/
+*.test.ts
+*.test.js
+
+# Config files
+tsconfig.json
+vitest.config.ts
+.releaserc.json
+.github/
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.log
+coverage/
+.DS_Store
+
+# Lock files (only include what you use)
+# Keep npm-lock or pnpm-lock based on what you publish
+
