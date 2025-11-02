@@ -66,6 +66,7 @@ console.log(result.data);
 
 Converts a JSON value (object, array, or primitive) into a Markdown string.
 
+
 **Parameters:**
 - `data` (`unknown`): The JSON value to convert
 - `options` (`JsonToMarkdownOptions`, optional): Configuration options
