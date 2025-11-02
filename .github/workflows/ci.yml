@@ -46,6 +46,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+      id-token: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -71,11 +76,6 @@ jobs:
         run: pnpm run build
 
       - name: Release
-        permissions:
-          contents: read
-          issues: write
-          pull-requests: write
-          id-token: write
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
