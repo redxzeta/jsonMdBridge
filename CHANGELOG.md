@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/redxzeta/jsonMdBridge/compare/v1.0.0...v1.0.1) (2025-11-02)
+
+### Bug Fixes
+
+* empty readme ([6adb205](https://github.com/redxzeta/jsonMdBridge/commit/6adb2055b11bd80985f23c5a2935f1cf8443523d))
+
 ## 1.0.0 (2025-11-02)
 
 ### Features
